@@ -16,7 +16,7 @@ runs
 log
 
 *.jpg
-*.json
+# *.json
 data/outcome
 
 *.pyc
