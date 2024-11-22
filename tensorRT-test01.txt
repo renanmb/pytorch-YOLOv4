@@ -1,0 +1,14 @@
+[11/21/2024-22:41:47] [I] === Performance summary ===
+[11/21/2024-22:41:47] [I] Throughput: 74.2574 qps
+[11/21/2024-22:41:47] [I] Latency: min = 19.7698 ms, max = 22.3664 ms, mean = 21.0599 ms, median = 21.1232 ms, percentile(90%) = 21.7288 ms, percentile(95%) = 21.9852 ms, percentile(99%) = 22.2366 ms
+[11/21/2024-22:41:47] [I] Enqueue Time: min = 1.9438 ms, max = 13.0522 ms, mean = 3.24228 ms, median = 2.72993 ms, percentile(90%) = 4.22339 ms, percentile(95%) = 5.91156 ms, percentile(99%) = 12.427 ms
+[11/21/2024-22:41:47] [I] H2D Latency: min = 2.91077 ms, max = 3.87695 ms, mean = 3.06187 ms, median = 3.00427 ms, percentile(90%) = 3.27271 ms, percentile(95%) = 3.39795 ms, percentile(99%) = 3.67236 ms
+[11/21/2024-22:41:47] [I] GPU Compute Time: min = 12.1161 ms, max = 14.7537 ms, mean = 13.3094 ms, median = 13.356 ms, percentile(90%) = 13.9536 ms, percentile(95%) = 14.1555 ms, percentile(99%) = 14.5923 ms
+[11/21/2024-22:41:47] [I] D2H Latency: min = 4.64111 ms, max = 5.13232 ms, mean = 4.68868 ms, median = 4.66867 ms, percentile(90%) = 4.71313 ms, percentile(95%) = 4.72986 ms, percentile(99%) = 5.10571 ms
+[11/21/2024-22:41:47] [I] Total Host Walltime: 3.04347 s
+[11/21/2024-22:41:47] [I] Total GPU Compute Time: 3.00792 s
+[11/21/2024-22:41:47] [W] * GPU compute time is unstable, with coefficient of variance = 4.16232%.
+[11/21/2024-22:41:47] [W]   If not already in use, locking GPU clock frequency or adding --useSpinWait may improve the stability.
+[11/21/2024-22:41:47] [I] Explanations of the performance metrics are printed in the verbose logs.
+[11/21/2024-22:41:47] [I] 
+&&&& PASSED TensorRT.trtexec [TensorRT v100500] [b18] # trtexec --onnx=yolov4_-1_3_608_608_dynamic.onnx --minShapes=input:1x3x608x608 --optShapes=input:4x3x608x608 --maxShapes=input:8x3x608x608 --saveEngine=yolov4_-1_3_608_608_dynamic.engine --fp16
